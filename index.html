@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+
+</head>
+<body>
+    <h1 class="normal">Salesforce Web-to-case test </h1>
+
+    <!--  ----------------------------------------------------------------------  -->
+<!--  참고: 다음 <META>요소를 <HEAD> 페이지에 추가하십시오.  필요한 경우 매개 변수를 수정하여 HTML 페이지의 문자   -->
+<!--  집합을 지정하십시오.                                                             -->
+<!--  ----------------------------------------------------------------------  -->
+
+<META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
+
+  <!--  ----------------------------------------------------------------------  -->
+  <!--  참고: 다음 <FORM>요소를 페이지에 추가하십시오.                                           -->
+  <!--  ----------------------------------------------------------------------  -->
+  
+  <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00DIR000001KAiS" method="POST">
+  
+  <input type=hidden name="oid" value="00DIR000001KAiS">
+  <input type=hidden name="retURL" value="http://">
+  
+  <!--  ----------------------------------------------------------------------  -->
+  <!--  참고: 이러한 필드는 선택적 디버깅 요소입니다. 디버그 모드에서 테스트하려면 이러한 줄의 주석 처리를 제거하십시오.        -->
+  <!--  <input type="hidden" name="debug" value=1>                              -->
+  <!--  <input type="hidden" name="debugEmail" value="julian@goodcen.com">      -->
+  <!--  ----------------------------------------------------------------------  -->
+
+<dev class="dust-class">
+  <label  for="first_name"><span>*</span>이름(성 없이)</label>
+<input  required id="first_name"  name="first_name"  type="text" />
+</dev>
+<br>
+<dev class="dust-class">
+  <label class="normal" for="last_name">성(姓)</label><input  id="last_name" maxlength="80" name="last_name" size="20" type="text" /></dev><br>
+<dev class="dust-class"  >
+  <label class="normal" for="email">이메일</label><input  id="email" maxlength="80" name="email" size="20" type="text" /></dev><br>
+  
+  <input class="b-button normal" type="submit" name="submit">
+  
+  </form>
+</body>
+  <style>
+    input{
+  font-family: 'Noto Sans KR','Noto Sans Korean', "Nanum Gothic", sans-serif !important;
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
+  border: 0;
+  outline: none;
+  font-size: 10px;
+}
+input::placeholder{
+color: #d9d9d9
+}
+.dust-class{
+  width: 50%; 
+  box-sizeing: border-box;
+  margin: 20px auto;
+  position: relative;
+}
+.dust-class label{
+  display: inline-block;
+  position: absolute;
+  top: -35px;
+  left: 14px;
+  padding: 10px;
+  background: white;
+  font-size: 14px;
+  color: #888;
+  font-weight: bold;
+}
+.dust-class label span{
+  color: #da4841;
+  vertical-align: -1px;
+}
+.dust-class input{
+  width: 150px;
+  border: 1px solid #dddddd !important;
+  font-size: 1rem;
+  line-height: 1.45;
+  letter-spacing: -0.04rem;
+  border-radius: 8px;
+  padding: 16px;
+  margin-top: 12px;
+}
+.b-button{
+  background-color:#079992;
+  clor:white;
+  padding:12px 60px;
+  color:#fff;
+  font-size:14px;
+  border-radius:25px;
+  margin-top: 10px;
+}
+
+
+
+/*@import url('https://fonts.googleapis.com/css?family=Darker+Grotesque&display=swap');
+
+.normal{
+  font-family: 'Darker Grotesque', sans-serif;
+  font-weight:500;
+  font-size:17px;
+}*/
+  </style>
+  <script>
+// Your js code goes here
+</script>
+
+</html>
