@@ -1,3 +1,6 @@
+*{
+  text-align : center;
+}
 input{
   font-family: 'Noto Sans KR','Noto Sans Korean', "Nanum Gothic", sans-serif !important;
   -webkit-appearance: none;
@@ -5,24 +8,30 @@ input{
   border: 0;
   outline: none;
   font-size: 10px;
+  
 }
 input::placeholder{
 color: #d9d9d9
+}
+.mainheader{
+  padding-top: 1px;
 }
 .dust-class{
   width: 50%; 
   box-sizeing: border-box;
   margin: 20px auto;
   position: relative;
+  
 }
 .dust-class label{
   display: inline-block;
   position: absolute;
   top: -35px;
-  left: 14px;
+  left: 10px;
   padding: 10px;
-  background: white;
-  font-size: 14px;
+  background: rgb(255, 255, 255); opacity : 0.7;
+  border-radius: 25px;
+  font-size: 12px;
   color: #888;
   font-weight: bold;
 }
@@ -31,16 +40,18 @@ color: #d9d9d9
   vertical-align: -1px;
 }
 .dust-class input{
-  width: 150px;
+  width: 300px;
   border: 1px solid #dddddd !important;
   font-size: 1rem;
   line-height: 1.45;
   letter-spacing: -0.04rem;
   border-radius: 8px;
   padding: 16px;
-  margin-top: 12px;
+  margin-top: 20px;
+  
 }
 .b-button{
+  
   background-color:#079992;
   clor:white;
   padding:12px 60px;
@@ -48,6 +59,17 @@ color: #d9d9d9
   font-size:14px;
   border-radius:25px;
   margin-top: 10px;
+}
+.g-recaptcha{
+  margin-top: 10px;
+  display:flex;
+  justify-content: center;
+  
+}
+.allpage{
+  width: 900px;
+  height: 500px;
+  background-image: url('../salesforce-ixjge1y4w0rkwtdn.jpg');
 }
 
 
@@ -59,4 +81,4 @@ color: #d9d9d9
   font-family: 'Darker Grotesque', sans-serif;
   font-weight:500;
   font-size:17px;
-}*/
+}

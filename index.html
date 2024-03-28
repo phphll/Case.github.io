@@ -12,8 +12,10 @@
 </script>
 </head>
 <body>
-    <h1 class="normal">Salesforce Web-to-case test </h1>
-
+  <div class="allpage">
+  <div class="mainheader">
+    <h1 class="normal">Salesforce Web-to-Case </h1>
+  </div>
     <!--  ----------------------------------------------------------------------  -->
 <!--  참고: 다음 <META>요소를 <HEAD> 페이지에 추가하십시오.  필요한 경우 매개 변수를 수정하여 HTML 페이지의 문자   -->
 <!--  집합을 지정하십시오.                                                             -->
@@ -28,14 +30,14 @@
   <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00DIR000001KAiS" onsubmit="beforeSubmit(event)" method="POST">
   <input type=hidden name='captcha_settings' value='{"keyname":"GitHub","fallback":"true","orgId":"00DIR000001KAiS","ts":""}'>
   <input type=hidden name="oid" value="00DIR000001KAiS">
-  <input type=hidden name="retURL" value="https://phphll.github.io/Screen.github.io/thx.html">
+  <input type=hidden name="retURL" value="http://https://phphll.github.io/Screen.github.io/thx.html">
   
   <!--  ----------------------------------------------------------------------  -->
   <!--  참고: 이러한 필드는 선택적 디버깅 요소입니다. 디버그 모드에서 테스트하려면 이러한 줄의 주석 처리를 제거하십시오.        -->
   <!--  <input type="hidden" name="debug" value=1>                              -->
   <!--  <input type="hidden" name="debugEmail" value="julian@goodcen.com">      -->
   <!--  ----------------------------------------------------------------------  -->
-
+<div class="mainitem">
 <dev class="dust-class">
   <label  for="first_name"><span>*</span>이름(성 없이)</label>
 <input  required id="first_name"  name="first_name"  type="text" />
@@ -46,9 +48,10 @@
 <dev class="dust-class"  >
   <label class="normal" for="email">이메일</label><input  id="email" maxlength="80" name="email" size="20" type="text" /></dev><br>
   
-  <div class="g-recaptcha" data-callback="captchaSuccess" data-sitekey="6Lf8O6cpAAAAANo8o_-FkCh9inmlBzmDJBb-teAR"></div><br>
+  <div class="g-recaptcha" data-callback="captchaSuccess" data-sitekey="6Lf8O6cpAAAAANo8o_-FkCh9inmlBzmDJBb-teAR" "></div><br>
   <input class="b-button normal" type="submit" name="submit">
-  
+</div>
   </form>
+</div>
 </body>
 </html>
