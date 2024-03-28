@@ -23,7 +23,7 @@
   <!--  ----------------------------------------------------------------------  -->
   
   <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00DIR000001KAiS" method="POST">
-  
+  <input type=hidden name='captcha_settings' value='{"keyname":"GitHub","fallback":"true","orgId":"00DIR000001KAiS","ts":""}'>
   <input type=hidden name="oid" value="00DIR000001KAiS">
   <input type=hidden name="retURL" value="http://https://phphll.github.io/Screen.github.io/thx.html">
   
@@ -42,7 +42,9 @@
   <label class="normal" for="last_name">성(姓)</label><input  id="last_name" maxlength="80" name="last_name" size="20" type="text" /></dev><br>
 <dev class="dust-class"  >
   <label class="normal" for="email">이메일</label><input  id="email" maxlength="80" name="email" size="20" type="text" /></dev><br>
-  
+
+  <div class="g-recaptcha" data-sitekey="6Lf8O6cpAAAAANo8o_-FkCh9inmlBzmDJBb-teAR"></div><br>
+    
   <input class="b-button normal" type="submit" name="submit">
   
   </form>
@@ -112,6 +114,7 @@ color: #d9d9d9
   </style>
   <script>
 // Your js code goes here
+    function timestamp() { var response = document.getElementById("g-recaptcha-response"); if (response == null ||        response.value.trim() == "") {var elems = JSON.parse(document.getElementsByName("captcha_settings")[0].value);elems["ts"] = JSON.stringify(new Date().getTime());document.getElementsByName("captcha_settings")[0].value = JSON.stringify(elems); } } setInterval(timestamp, 500);
 </script>
 
 </html>
