@@ -82,7 +82,11 @@ color: #d9d9d9
   background-image: url('./salesforce-ixjge1y4w0rkwtdn.jpg');
   background-size: cover;
 }
-
+.subbox{
+  position: absolute;
+  left: 17%;
+  top:15%;
+}
 
 
 
