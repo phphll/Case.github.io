@@ -27,10 +27,10 @@
   <!--  참고: 다음 <FORM>요소를 페이지에 추가하십시오.                                           -->
   <!--  ----------------------------------------------------------------------  -->
   
-  <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00DIR000001KAiS" onsubmit="beforeSubmit(event)" method="POST">
+  <form action="https://webto.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8&orgId=00DIR000001KAiS" onsubmit="beforeSubmit(event)"method="POST">
   <input type=hidden name='captcha_settings' value='{"keyname":"GitHub","fallback":"true","orgId":"00DIR000001KAiS","ts":""}'>
   <input type=hidden name="oid" value="00DIR000001KAiS">
-  <input type=hidden name="retURL" value="http://phphll.github.io/Screen.github.io/thx.html">
+  <input type=hidden name="retURL" value="https://phphll.github.io/Screen.github.io/thx.html">
   
   <!--  ----------------------------------------------------------------------  -->
   <!--  참고: 이러한 필드는 선택적 디버깅 요소입니다. 디버그 모드에서 테스트하려면 이러한 줄의 주석 처리를 제거하십시오.        -->
@@ -39,14 +39,36 @@
   <!--  ----------------------------------------------------------------------  -->
 <div class="mainitem">
 <dev class="dust-class">
-  <label  for="first_name"><span>*</span>이름(성 없이)</label>
-<input  required id="first_name"  name="first_name"  type="text" />
+  <label for="name">Contact Name</label>
+  <input  id="name" maxlength="80" name="name" size="20" type="text" />
 </dev>
 <br>
 <dev class="dust-class">
-  <label class="normal" for="last_name">성(姓)</label><input  id="last_name" maxlength="80" name="last_name" size="20" type="text" /></dev><br>
+  <label for="email">Email</label>
+  <input  id="email" maxlength="80" name="email" size="20" type="text" />
+</dev>
+<br>
 <dev class="dust-class"  >
-  <label class="normal" for="email">이메일</label><input  id="email" maxlength="80" name="email" size="20" type="text" /></dev><br>
+  <label for="phone">Phone</label><input  id="phone" maxlength="40" name="phone" size="20" type="text" /></dev><br>
+<dev class="dust-class"> 
+  <label for="picklist">Product</label>
+  <select  id="00NIR00000Atu5R" name="00NIR00000Atu5R" title="Product">
+    <option value="">--None--</option>
+    <option value="GC1040">GC1040</option>
+    <option value="GC1060">GC1060</option>
+    <option value="GC3020">GC3020</option>
+    <option value="GC3040">GC3040</option>
+    <option value="GC3060">GC3060</option>
+    <option value="GC5020">GC5020</option>
+    <option value="GC5040">GC5040</option>
+    <option value="GC5060">GC5060</option>
+    <option value="GC1020">GC1020</option>
+    </select>
+    
+    <br>
+    
+    <input type="hidden"  id="external" name="external" value="1" />
+  </dev><br>
   
   <div class="g-recaptcha" data-callback="captchaSuccess" data-sitekey="6Lf8O6cpAAAAANo8o_-FkCh9inmlBzmDJBb-teAR" "></div><br>
   <input class="b-button normal" type="submit" name="submit">
