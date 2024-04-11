@@ -1,6 +1,17 @@
 *{
   text-align : center;
 }
+
+.item1 {
+  left: 200px;
+  position: absolute;
+}
+.item2 {
+  position: absolute;
+  left: 650px;
+  top: 420px;
+}
+
 input{
   font-family: 'Noto Sans KR','Noto Sans Korean', "Nanum Gothic", sans-serif !important;
   -webkit-appearance: none;
