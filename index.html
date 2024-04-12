@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
@@ -16,19 +17,16 @@
   <div class="mainheader">
     <h1 class="normal">Salesforce Web-to-Case </h1>
   </div>
-    <!--  ----------------------------------------------------------------------  -->
-<!--  참고: 다음 <META>요소를 <HEAD> 페이지에 추가하십시오.  필요한 경우 매개 변수를 수정하여 HTML 페이지의 문자   -->
-<!--  집합을 지정하십시오.                                                             -->
-<!--  ----------------------------------------------------------------------  -->
 
-<META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
+
+
 
   <!--  ----------------------------------------------------------------------  -->
   <!--  참고: 다음 <FORM>요소를 페이지에 추가하십시오.                                           -->
   <!--  ----------------------------------------------------------------------  -->
   
   <form action="https://webto.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8&orgId=00DIR000001KAiS" onsubmit="beforeSubmit(event)"method="POST">
-  <input type=hidden name='captcha_settings' value='{"keyname":"GitHub","fallback":"true","orgId":"00DIR000001KAiS","ts":""}'>
+  <input type=hidden name='captcha_settings' value='{"keyname":"Newkey412","fallback":"true","orgId":"00DIR000001KAiS","ts":""}'>
   <input type=hidden name="orgid" value="00DIR000001KAiS">
   <input type=hidden name="retURL" value="https://phphll.github.io/Screen.github.io/thx.html">
   
@@ -211,7 +209,6 @@
     
     <label for="picklist">부위1</label>
     <select  id="00NIR000009MV5j" name="00NIR000009MV5j" title="부위1">
-      <option value="">--없음--</option>
       <option value="이상없음">이상없음</option>
       <option value="바닥">바닥</option>
       <option value="벽">벽</option>
@@ -233,12 +230,11 @@
 </div>
 <br>
 <div class="item2">
-  <div class="g-recaptcha" data-callback="captchaSuccess" data-sitekey="6Lf8O6cpAAAAANo8o_-FkCh9inmlBzmDJBb-teAR" "></div>
-  <br>
+  <div class="g-recaptcha" data-sitekey="6LfujbgpAAAAACIfgkzElkFye1b1o8j8mDq1ZZQf"></div><br>
   <input class="b-button normal" type="submit" name="submit">
 </div>
 </div>
-</div>
+
   </form>
 </div>
 </body>
