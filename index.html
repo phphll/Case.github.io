@@ -7,11 +7,6 @@
   <title>Document</title>
   <link rel="stylesheet" href="style.css">
   <script src="script.js"></script>
-  <script src="https://www.google.com/recaptcha/api.js"></script>
-    <script>
-    function timestamp() { var response = document.getElementById("g-recaptcha-response"); if (response == null ||        response.value.trim() == "") {var elems = JSON.parse(document.getElementsByName("captcha_settings")[0].value);elems["ts"] = JSON.stringify(new Date().getTime());document.getElementsByName("captcha_settings")[0].value = JSON.stringify(elems); } } setInterval(timestamp, 500);
-let captchaChecked = false;
-</script>
 </head>
 <body>
   <div class="allpage">
@@ -26,8 +21,7 @@ let captchaChecked = false;
   <!--  참고: 다음 <FORM>요소를 페이지에 추가하십시오.                                           -->
   <!--  ----------------------------------------------------------------------  -->
   
-  <form action="https://webto.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8&orgId=00DIR000001KAiS" onsubmit="beforeSubmit(event)" method="POST">
-  <input type=hidden name='captcha_settings' value='{"keyname":"Newkey412","fallback":"true","orgId":"00DIR000001KAiS","ts":""}'>
+  <form action="https://webto.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8&orgId=00DIR000001KAiS"  method="POST">
   <input type=hidden name="orgid" value="00DIR000001KAiS">
   <input type=hidden name="retURL" value="https://phphll.github.io/Screen.github.io/thx.html">
   
@@ -37,7 +31,7 @@ let captchaChecked = false;
   <!--  <input type="hidden" name="debugEmail" value="julian@goodcen.com">      -->
   <!--  ----------------------------------------------------------------------  -->
 <div class="mainitem">
-  <div class="item1">
+  <!-- <div class="item1"> -->
 <dev class="dust-class">
   
   <label >입주자명</label>
@@ -46,10 +40,13 @@ let captchaChecked = false;
 <br>
 <dev class="dust-class">
   <label >현장명</label>
-  <input  id="00NIR000009MV5U" maxlength="255" name="00NIR000009MV5U" size="20" type="text" />
+  <select  id="00NIR000009MV5U" name="00NIR000009MV5U" title="현장명"><option value="">--없음--</option><option value="가경자이(충북)">가경자이(충북)</option>
+    <option value="장유자이더파크">장유자이더파크</option>
+    <option value="동대구역센트럴시티자이">동대구역센트럴시티자이</option>
+    </select>
 </dev>
 <br>
-<dev class="dust-class"  >
+<dev class="dust-class">
   <label for="picklist">그룹</label>
   <select  id="00NIR000009MV5Z" name="00NIR000009MV5Z" title="그룹">
     <option value="">--없음--</option>       
@@ -225,16 +222,15 @@ let captchaChecked = false;
 
 <dev class="dust-class">
 <label>하자내용</label>
-<input  id="00NIR000009MQST" maxlength="255" name="00NIR000009MQST" size="20" type="text" /><br>
-  
+<input  id="subject" maxlength="80" name="subject" size="20" type="text" />
 </dev>
-</div>
+<!-- </div> -->
 <br>
-<div class="item2">
-  <div class="g-recaptcha" data-callback="captchaSuccess" data-sitekey="6LfujbgpAAAAACIfgkzElkFye1b1o8j8mDq1ZZQf"></div><br>
+<!-- <div class="item2"> -->
+
   <input class="b-button normal" type="submit" name="submit">
 </div>
-</div>
+<!-- </div> -->
 
   </form>
 </div>
